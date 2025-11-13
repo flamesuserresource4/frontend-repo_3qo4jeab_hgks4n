@@ -264,6 +264,7 @@ function Projects() {
 
 function Certifications() {
   const certs = [
+    { name: 'Certified Ethical Hacker (CEH) — 1st Place', issuer: 'EC-Council', year: '2024', badge: '1st Place' },
     { name: 'Cisco CCNA (in-progress/interest)', issuer: 'Cisco', year: '2025' },
     { name: 'AWS Cloud Practitioner', issuer: 'Amazon Web Services', year: '2024' },
     { name: 'Google Cybersecurity Fundamentals', issuer: 'Google', year: '2024' },
@@ -276,12 +277,17 @@ function Certifications() {
         <div className="mt-8 grid md:grid-cols-2 lg:grid-cols-3 gap-6">
           {certs.map(c => (
             <div key={c.name} className="rounded-2xl p-5 bg-white/[0.03] ring-1 ring-white/10">
-              <div className="flex items-center justify-between">
+              <div className="flex items-start justify-between gap-3">
                 <div>
-                  <h3 className="text-white font-semibold">{c.name}</h3>
+                  <h3 className="text-white font-semibold flex items-center gap-2">
+                    {c.name}
+                    {c.badge && (
+                      <span className="text-[10px] uppercase tracking-wide px-2 py-0.5 rounded-full bg-gradient-to-r from-amber-400 to-yellow-300 text-slate-900 ring-1 ring-amber-300/60">🥇 {c.badge}</span>
+                    )}
+                  </h3>
                   <p className="text-slate-400 text-sm">{c.issuer}</p>
                 </div>
-                <span className="text-xs text-cyan-300">{c.year}</span>
+                <span className="text-xs text-cyan-300 whitespace-nowrap">{c.year}</span>
               </div>
             </div>
           ))}
