@@ -304,7 +304,7 @@ function Contact() {
         <h2 className="text-3xl font-bold text-white">Let’s build something secure and smart</h2>
         <p className="mt-3 text-slate-400">Open to internships, security engineering roles, and research collaborations.</p>
         <div className="mt-8 flex flex-col sm:flex-row items-center justify-center gap-3">
-          <a href="mailto:nirmal@example.com" className="inline-flex items-center gap-2 bg-white text-slate-900 px-5 py-2.5 rounded-md font-medium hover:bg-slate-100">
+          <a href="mailto:pawarnirmal55@gmail.com" className="inline-flex items-center gap-2 bg-white text-slate-900 px-5 py-2.5 rounded-md font-medium hover:bg-slate-100">
             <Mail size={18}/> Email Me
           </a>
           <a href="https://github.com/" target="_blank" rel="noreferrer" className="inline-flex items-center gap-2 px-5 py-2.5 rounded-md font-medium border border-white/20 text-white hover:bg-white/10"><Github size={18}/> GitHub</a>
